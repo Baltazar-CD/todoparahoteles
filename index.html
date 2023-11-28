@@ -1,0 +1,552 @@
+﻿<!doctype html>
+<html class="no-js" lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Todo para Hoteles</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://www.ultraweb.mx/assets/js/fecha.js"></script>
+
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="loader-icon"><img src="assets/img/logo/preloader.png" alt="Preloader"></div>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll__top scroll-to-target" data-target="html">
+        <i class="fas fa-angle-up"></i>
+    </button>
+
+    <div id="header-fixed-height"></div>
+    <header class="tg-header__style-two">
+        <div class="tg-header__inner-wrap">
+            <div class="tg-header__logo-wrap">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                </div>
+            </div>
+            <div class="tg-header__right-side">
+                <div class="tg-header__top tg-header__top-two">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="tg-header__top-info tg-header__top-info-two list-wrap">
+                                <li><i class="flaticon-phone-call"></i><a href="tel:0123456789">+123 9898 500</a></li>
+                                <li><i class="flaticon-envelope"></i><a href="">hola@todoparahoteles.net</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="tg-header__top-right tg-header__top-right-two list-wrap">
+                                <li><i class="flaticon-time"></i><script type="text/javascript">document.write(textoFecha(fecha));</script></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="sticky-header" class="tg-header__area tg-header__area-two">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="tgmenu__wrap">
+                                <nav class="tgmenu__nav">
+                                    <div class="logo d-none">
+                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    </div>
+                                    <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
+                                        <ul class="navigation">
+                                            <li><a href="#">Inicio</a></li>
+                                            <li><a href="#">Sobre Nosotros</a></li>
+                                            <li><a href="#">Productos</a></li>
+                                            <li><a href="#">Servicios</a></li>
+                                            <li><a href="#">Contáctenos</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tgmenu__action tgmenu__action-two d-none d-md-block">
+                                        <ul class="list-wrap">
+                                            <li class="offCanvas-menu">
+                                                <a href="javascript:void(0)" class="menu-tigger">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 18 18" fill="none">
+                                                        <path d="M0 2C0 0.895431 0.895431 0 2 0C3.10457 0 4 0.895431 4 2C4 3.10457 3.10457 4 2 4C0.895431 4 0 3.10457 0 2Z" fill="currentcolor"></path>
+                                                        <path d="M0 9C0 7.89543 0.895431 7 2 7C3.10457 7 4 7.89543 4 9C4 10.1046 3.10457 11 2 11C0.895431 11 0 10.1046 0 9Z" fill="currentcolor"></path>
+                                                        <path d="M0 16C0 14.8954 0.895431 14 2 14C3.10457 14 4 14.8954 4 16C4 17.1046 3.10457 18 2 18C0.895431 18 0 17.1046 0 16Z" fill="currentcolor"></path>
+                                                        <path d="M7 2C7 0.895431 7.89543 0 9 0C10.1046 0 11 0.895431 11 2C11 3.10457 10.1046 4 9 4C7.89543 4 7 3.10457 7 2Z" fill="currentcolor"></path>
+                                                        <path d="M7 9C7 7.89543 7.89543 7 9 7C10.1046 7 11 7.89543 11 9C11 10.1046 10.1046 11 9 11C7.89543 11 7 10.1046 7 9Z" fill="currentcolor"></path>
+                                                        <path d="M7 16C7 14.8954 7.89543 14 9 14C10.1046 14 11 14.8954 11 16C11 17.1046 10.1046 18 9 18C7.89543 18 7 17.1046 7 16Z" fill="currentcolor"></path>
+                                                        <path d="M14 2C14 0.895431 14.8954 0 16 0C17.1046 0 18 0.895431 18 2C18 3.10457 17.1046 4 16 4C14.8954 4 14 3.10457 14 2Z" fill="currentcolor"></path>
+                                                        <path d="M14 9C14 7.89543 14.8954 7 16 7C17.1046 7 18 7.89543 18 9C18 10.1046 17.1046 11 16 11C14.8954 11 14 10.1046 14 9Z" fill="currentcolor"></path>
+                                                        <path d="M14 16C14 14.8954 14.8954 14 16 14C17.1046 14 18 14.8954 18 16C18 17.1046 17.1046 18 16 18C14.8954 18 14 17.1046 14 16Z" fill="currentcolor"></path>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="header-btn"><a href="contact.html" class="btn"><i class="far fa-comment-alt"></i>PONERSE EN CONTACTO</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mobile-nav-toggler mobile-nav-toggler-two">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 18 18" fill="none">
+                                            <path d="M0 2C0 0.895431 0.895431 0 2 0C3.10457 0 4 0.895431 4 2C4 3.10457 3.10457 4 2 4C0.895431 4 0 3.10457 0 2Z" fill="currentcolor"></path>
+                                            <path d="M0 9C0 7.89543 0.895431 7 2 7C3.10457 7 4 7.89543 4 9C4 10.1046 3.10457 11 2 11C0.895431 11 0 10.1046 0 9Z" fill="currentcolor"></path>
+                                            <path d="M0 16C0 14.8954 0.895431 14 2 14C3.10457 14 4 14.8954 4 16C4 17.1046 3.10457 18 2 18C0.895431 18 0 17.1046 0 16Z" fill="currentcolor"></path>
+                                            <path d="M7 2C7 0.895431 7.89543 0 9 0C10.1046 0 11 0.895431 11 2C11 3.10457 10.1046 4 9 4C7.89543 4 7 3.10457 7 2Z" fill="currentcolor"></path>
+                                            <path d="M7 9C7 7.89543 7.89543 7 9 7C10.1046 7 11 7.89543 11 9C11 10.1046 10.1046 11 9 11C7.89543 11 7 10.1046 7 9Z" fill="currentcolor"></path>
+                                            <path d="M7 16C7 14.8954 7.89543 14 9 14C10.1046 14 11 14.8954 11 16C11 17.1046 10.1046 18 9 18C7.89543 18 7 17.1046 7 16Z" fill="currentcolor"></path>
+                                            <path d="M14 2C14 0.895431 14.8954 0 16 0C17.1046 0 18 0.895431 18 2C18 3.10457 17.1046 4 16 4C14.8954 4 14 3.10457 14 2Z" fill="currentcolor"></path>
+                                            <path d="M14 9C14 7.89543 14.8954 7 16 7C17.1046 7 18 7.89543 18 9C18 10.1046 17.1046 11 16 11C14.8954 11 14 10.1046 14 9Z" fill="currentcolor"></path>
+                                            <path d="M14 16C14 14.8954 14.8954 14 16 14C17.1046 14 18 14.8954 18 16C18 17.1046 17.1046 18 16 18C14.8954 18 14 17.1046 14 16Z" fill="currentcolor"></path>
+                                        </svg>
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <div class="tgmobile__menu">
+                                <nav class="tgmobile__menu-box">
+                                    <div class="close-btn"><i class="fas fa-times"></i></div>
+                                    <div class="nav-logo">
+                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    </div>
+                                    <div class="tgmobile__menu-outer">
+                                    </div>
+                                    <div class="tgmobile__menu-bottom">
+                                        <div class="contact-info">
+                                            <ul class="list-wrap">
+                                                <li><a href="/cdn-cgi/l/email-protection#5f363139301f3e2f3a273e713c3032"><span class="__cf_email__" data-cfemail="523b3c343d123322372a337c313d3f">[email&#160;protected]</span></a></li>
+                                                <li><a href="tel:0123456789">+123 888 9999</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="social-links">
+                                            <ul class="list-wrap">
+                                                <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
+                                                <li><a href="javascript:void(0)"><i class="fab fa-youtube"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tgmobile__menu-backdrop"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="search-popup-overlay"></div>
+        <!-- header-search-end -->
+
+        <!-- offCanvas-menu -->
+        <div class="offCanvas__info">
+            <div class="offCanvas__close-icon menu-close">
+                <button><i class="far fa-window-close"></i></button>
+            </div>
+            <div class="offCanvas__logo mb-30">
+                <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+            </div>
+            <div class="offCanvas__side-info mb-30">
+                <div class="contact-list mb-30">
+                    <h4>Office Address</h4>
+                    <p>123/A, Miranda City Likaoli <br> Prikano, Dope</p>
+                </div>
+                <div class="contact-list mb-30">
+                    <h4>Phone Number</h4>
+                    <p>+0989 7876 9865 9</p>
+                    <p>+(090) 8765 86543 85</p>
+                </div>
+                <div class="contact-list mb-30">
+                    <h4>Email Address</h4>
+                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d0b9beb6bf90b5a8b1bda0bcb5feb3bfbd">[email&#160;protected]</a></p>
+                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bdd8c5dcd0cdd1d893d0dcd4d1fdd5c8d093ded2d0">[email&#160;protected]</a></p>
+                </div>
+            </div>
+            <div class="offCanvas__social-icon mt-30">
+                <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="offCanvas__overly"></div>
+        <!-- offCanvas-menu-end -->
+
+    </header>
+    <!-- header-area-end -->
+
+    <!-- main-area -->
+    <main class="fix">
+
+        <!-- slider-area -->
+        <section class="slider__area">
+            <div class="swiper-container slider__active">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider__single">
+                        <div class="slider__bg" data-background="assets/img/slider/slider_bg01.jpg"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="slider__content">
+                                        <span class="sub-title">Suministros para hoteles</span>
+                                        <h2 class="title">Proveedores De Productos Para Hoteles De Alta Calidad</h2>
+                                        <p>Comercializamos y suministramos exclusivos productos para la línea hotelera, tales como ameníties, jabones y jaboncillos. También incluímos geles, aromatizadores, acondicionadores, shampoos.</p>
+                                        <a href="#" class="btn">Consultar Productos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__shape">
+                            <img src="assets/img/slider/slider_shape01.png" alt="">
+                            <img src="assets/img/slider/slider_shape02.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider__single">
+                        <div class="slider__bg" data-background="assets/img/slider/slider_bg02.jpg"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="slider__content">
+                                        <span class="sub-title">Suministros para hoteles</span>
+                                        <h2 class="title">Todo Lo Que Necesitas Para Poder Equipar Tu Hotel</h2>
+                                        <p>Comercializamos y suministramos exclusivos productos para la línea hotelera, tales como ameníties, jabones y jaboncillos. También incluímos geles, aromatizadores, acondicionadores, shampoos.</p>
+                                        <a href="#" class="btn">Consultar Productos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__shape">
+                            <img src="assets/img/slider/slider_shape01.png" alt="">
+                            <img src="assets/img/slider/slider_shape02.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-area pt-120 pb-120">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img-wrap">
+                            <div>
+                                <img class="border" src="assets/img/images/about_img01.jpg" alt="">
+                            </div>
+
+                            <div class="experience-year">
+                                <div class="icon">
+                                    <i class="flaticon-trophy"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="circle rotateme">- Calidad - Conocimiento</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-title mb-35 tg-heading-subheading animation-style3">
+                                <span class="sub-title">Sonbre nosotros</span>
+                                <h2 class="title tg-element-title">We Help Organizations To <br> Make Ultimate Businesses Growth Success.</h2>
+                            </div>
+                            <div class="about-list">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <div class="icon">
+                                            <i class="flaticon-target"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title">Business Solutions</h4>
+                                            <p>Semper egetuis tellus urna condi</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="flaticon-profit"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title">Quality Services</h4>
+                                            <p>Semper egetuis tellus urna condi</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>We successfully cope with tasks of varying complexityprovide longerty term guarantees and regularly master new Practice Area technol ogiesOur portfolio includes dozen</p>
+                            <div class="about-bottom">
+                                <a href="" class="btn btn-two">Contactar</a>
+                            </div>
+                            <div class="about-shape-wrap">
+                                <img src="assets/img/images/about_shape03.png" alt="">
+                                <img src="assets/img/images/about_shape04.png" alt="" class="ribbonRotate">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-left-shape">
+                <img src="assets/img/images/about_shape02.png" alt="">
+            </div>
+        </section>
+
+        <section class="services-area services-bg" data-background="assets/img/bg/services_bg.jpg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="section-title text-center mb-40 tg-heading-subheading animation-style3">
+                            <span class="sub-title">LO QUE OFRECEMOS</span>
+                            <h2 class="title tg-element-title">Todo en productos hoteleros</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-item-wrap">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                            <div class="services-item shine-animate-item">
+                                <div class="services-thumb">
+                                    <a href="" class="shine-animate"><img src="assets/img/services/services_img01.jpg" alt=""></a>
+                                </div>
+                                <div class="services-content">
+                                    <div class="icon">
+                                        <i class="flaticon-profit"></i>
+                                    </div>
+                                    <h4 class="title"><a href="">Strategic marketing</a></h4>
+                                    <p>Morem ipsum dolor sittemet consectetur adipiscing.</p>
+                                    <a href="" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                            <div class="services-item shine-animate-item">
+                                <div class="services-thumb">
+                                    <a href="" class="shine-animate"><img src="assets/img/services/services_img02.jpg" alt=""></a>
+                                </div>
+                                <div class="services-content">
+                                    <div class="icon">
+                                        <i class="flaticon-investment-1"></i>
+                                    </div>
+                                    <h4 class="title"><a href="">Investment Planning</a></h4>
+                                    <p>Morem ipsum dolor sittemet consectetur adipiscing.</p>
+                                    <a href="" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                            <div class="services-item shine-animate-item">
+                                <div class="services-thumb">
+                                    <a href="" class="shine-animate"><img src="assets/img/services/services_img03.jpg" alt=""></a>
+                                </div>
+                                <div class="services-content">
+                                    <div class="icon">
+                                        <i class="flaticon-pie-chart"></i>
+                                    </div>
+                                    <h4 class="title"><a href="">Insights & analytics</a></h4>
+                                    <p>Morem ipsum dolor sittemet consectetur adipiscing.</p>
+                                    <a href="" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                            <div class="services-item shine-animate-item">
+                                <div class="services-thumb">
+                                    <a href="" class="shine-animate"><img src="assets/img/services/services_img04.jpg" alt=""></a>
+                                </div>
+                                <div class="services-content">
+                                    <div class="icon">
+                                        <i class="flaticon-light-bulb"></i>
+                                    </div>
+                                    <h4 class="title"><a href="">Business consulting</a></h4>
+                                    <p>Morem ipsum dolor sittemet consectetur adipiscing.</p>
+                                    <a href="" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-bottom-content">
+                    <p>Empowering Businesses through Strategic Consulting With Us</p>
+                    <a href="" class="btn">Ver todos los productos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="request-area request-bg" data-background="assets/img/bg/request_bg.jpg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="request-content text-center tg-heading-subheading animation-style3">
+                            <h2 class="title tg-element-title">Offering The Best Experience Of Business Consulting Services</h2>
+                            <div class="content-bottom">
+                                <a href="tel:0123456789" class="btn">Contactenos mediante llamada</a>
+                                <div class="content-right">
+                                    <div class="icon">
+                                        <i class="flaticon-phone-call"></i>
+                                    </div>
+                                    <div class="content">
+                                        <span>Llámenos Ahora</span>
+                                        <a href="tel:0123456789">+ 88 ( 9600 ) 6002</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="request-shape">
+                <img src="assets/img/images/request_shape01.png" alt="" data-aos="fade-right" data-aos-delay="400">
+                <img src="assets/img/images/request_shape02.png" alt="" data-aos="fade-left" data-aos-delay="400">
+            </div>
+        </section>
+
+
+        <section class="contact__area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="contact__content">
+                            <div class="section-title mb-35">
+                                <h2 class="title">Contáctenos</h2>
+                                <p>When an unknown printer took a galley of type and scrambled it to make type pecimen book. It has survived not only five areafact types remaining essentially unchangedIt</p>
+                            </div>
+                            <div class="contact__info">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <div class="icon">
+                                            <i class="flaticon-pin"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title">Dirección</h4>
+                                            <p>Awamileaug Drive, Kensington London, UK</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="flaticon-phone-call"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title">Teléfono</h4>
+                                            <a href="tel:0123456789">+48 500-130-0001</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="flaticon-mail"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title">Correo Electrónico</h4>
+                                            <a href="/cdn-cgi/l/email-protection#9ef7f0f8f1def9f3fff7f2b0fdf1f3"><span class="__cf_email__" data-cfemail="f1989f979eb1969c90989ddf929e9c">hola@todoparahoteles.net</span></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="contact__form-wrap">
+                            <h2 class="title">Formulario de contacto</h2>
+                            <p>Su correo no será publicado. Los campos obligatorios están marcados *</p>
+                            <form id="contact-form" action="assets/mail.php" method="POST">
+                                <div class="form-grp">
+                                    <textarea name="message" placeholder="Mensaje"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-grp">
+                                            <input type="text" name="name" placeholder="Nombre">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-grp">
+                                            <input type="email" name="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-grp">
+                                            <input type="number" name="phone" placeholder="Teléfono">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-grp checkbox-grp">
+                                    <input type="checkbox" name="checkbox" id="checkbox">
+                                    <label for="checkbox">Guarde mi nombre, correo y teléfono para la próxima vez que comente.</label>
+                                </div>
+                                <button type="submit" class="btn">Enviar Mensaje</button>
+                            </form>
+                            <p class="ajax-response mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- main-area-end -->
+
+
+    <!-- footer-area -->
+    <footer>
+        <div class="footer__area-three">
+            <div class="footer__bottom-three">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="fw-logo">
+                                <a href="index.html"><img src="assets/img/logo/w_logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="copyright-text">
+                                <p>Copyright © <a href="index.html">Todo para Hoteles</a> | Todos los derechos reservados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
+
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/ScrollTrigger.js"></script>
+    <script src="assets/js/SplitText.js"></script>
+    <script src="assets/js/gsap-animation.js"></script>
+    <script src="assets/js/jquery.parallaxScroll.min.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+        <script>
+        const text = document.querySelector('.circle');
+        text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+        const element = document.querySelectorAll('.circle span');
+        for (let i = 0; i < element.length; i++) {
+            element[i].style.transform = "rotate(" + i * 17 + "deg)"
+        }
+    </script>
+</body>
+
+</html>
